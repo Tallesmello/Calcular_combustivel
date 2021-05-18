@@ -39,11 +39,7 @@ class CalculoGasolinaActivity : AppCompatActivity(), View.OnClickListener {
                 val valorTotal = (distance * price) / autonomy
                 totalResultado.text = "R$ ${"%.2f".format(valorTotal)}"
             } catch (nfe: NumberFormatException) {
-                Toast.makeText(
-                    this,
-                    getString(R.string.notificacao_informe_valor_valido),
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(this,getString(R.string.notificacao_informe_valor_valido), Toast.LENGTH_LONG).show()
             }
 
         } else {
