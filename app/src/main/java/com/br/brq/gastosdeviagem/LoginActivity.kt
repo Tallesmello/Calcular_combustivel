@@ -36,10 +36,11 @@ class LoginActivity : AppCompatActivity() {
 
 
     fun carregarEvento() {
+
         btnEntrar.setOnClickListener() {
 
 
-            if (validarEmail() && validarSenha()) {
+             if (validarEmail() && validarSenha()) {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
 
@@ -48,9 +49,6 @@ class LoginActivity : AppCompatActivity() {
                     .show()
             }
 
-
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
         }
     }
 
