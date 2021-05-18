@@ -4,24 +4,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
+import kotlinx.android.synthetic.main.activity_login.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-
+class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
         if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
 
+        btnEntrar.setOnClickListener(this)
 
     }
 
-    override fun onClick(v: View) {
-        val intent = Intent(this, CalculoGasolinaActivity::class.java)
+    override fun onClick(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
+
 }
+

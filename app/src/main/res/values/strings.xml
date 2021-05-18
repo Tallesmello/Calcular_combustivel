@@ -9,6 +9,8 @@
     <string name="gasto_total">Seu gasto total será de:</string>
     <string name="resultadoTotal">R$ 0</string>
     <string name="calcular_button">calcular</string>
-    <string name="notificacao_insira_valores">Insira os valores</string>
+    <string name="notificacao_insira_valores">Insira um valor diferente de 0</string>
     <string name="notificacao_informe_valor_valido">Informe um valor válido</string>
+    <string name="descricao_login">Quer viajar mas não sabe quanto vai custar?
+Planeje os valores de transporte, alimentação, hospedagem e lazer para descobrir.</string>
 </resources>

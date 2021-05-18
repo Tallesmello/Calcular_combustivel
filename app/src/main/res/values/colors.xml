@@ -7,6 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="darBlue">#2E5077</color>
+    <color name="darkBlue">#2E5077</color>
     <color name="lightGreen">#43C59E</color>
+    <color name="colorGreenlight">#008577</color>
+    <color name="colorGreendark">#00574B</color>
+    <color name="colorAccentPink">#D81B</color>
+    <color name="colorPrimary">#7F2A68</color>
+    <color name="colorPrimaryDark">#5F1049</color>
+    <color name="colorPri">#CAADBB</color>
+    <color name="colorAccenters">#D081AB</color>
+    <color name="colorAccent">#4c0d3a</color>
+<!--    <color name="tamires">#00FFFF</color>-->
+    <color name="tamires">#fcffa4</color>
 </resources>

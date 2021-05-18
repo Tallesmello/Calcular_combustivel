@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccenters"
+    tools:context=".CalculoGasolinaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Combustivel"
+            android:textSize="25sp"
+            android:padding="20dp"
+            android:textColor="@color/tamires"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_calculate_24" />
+
+    <EditText
+        android:id="@+id/distanciaTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:hint="@string/distancia"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/total_de_quilometros"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/precoR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/preco"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/preco_por_litro"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/autonomiaTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/autonomia"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/km_por_litro"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="@string/gasto_total"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="22dp" />
+
+    <!--  TextView que mostra o resultado do calculo  -->
+    <!--  FIM  -->
+
+
+    <TextView
+        android:id="@+id/totalResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/resultadoTotal"
+        android:textColor="@color/tamires"
+        android:textSize="40sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  Botão calcular  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripper"
+            android:text="@string/calcular_button"
+            android:textAllCaps="true"
+            android:textColor="@color/tamires"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--  FIM  -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
