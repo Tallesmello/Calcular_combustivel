@@ -11,12 +11,15 @@ import kotlinx.android.synthetic.main.activity_hospedagem.*
 import kotlinx.android.synthetic.main.activity_hospedagem.toGasto as toGasto1
 
 
-lateinit var valorDiaria : EditText
+
+
+
+class HospedagemActivity : AppCompatActivity() {
+    lateinit var valorDiaria : EditText
     lateinit var qtdeDiaria : EditText
     lateinit var toGasto : TextView
 
 
-class HospedagemActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hospedagem)
@@ -26,8 +29,6 @@ class HospedagemActivity : AppCompatActivity() {
         totResult()
 
     }
-
-
 
         fun carregarElementos(){
             valorDiaria = findViewById(R.id.editDiaria)

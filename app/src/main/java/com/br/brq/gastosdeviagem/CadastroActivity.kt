@@ -57,12 +57,26 @@ class CadastroActivity : AppCompatActivity() {
     fun carregarEvento() {
 
         btnCadastrar.setOnClickListener() {
+            val isnameValid = validarNome()
+            val istelefoneValid = validarNome()
+            val isemailValid = validarNome()
+            val issenhaValid = validarNome()
 
-            if (validarNome() && validarEmail() && validarTelefone() && validarSenha()) {
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
+            if (isnameValid && istelefoneValid && isemailValid && issenhaValid) {
+                finish()
 
             } else {
+                if(!isnameValid ){
+                    nome.setError("Campo Inválido")
+
+                }else if (!istelefoneValid){
+                    telefone.setError("Telefone Inválido")
+
+                }else if (!isemailValid){
+                    email.setError("Email invávilo")
+                }else if (!issenhaValid){
+                    senha.setError("Senha inválida")
+                }
                 Toast.makeText(this, "Informação inválida", Toast.LENGTH_LONG)
                     .show()
             }
