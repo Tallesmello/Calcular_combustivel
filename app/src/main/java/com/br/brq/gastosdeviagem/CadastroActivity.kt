@@ -19,13 +19,12 @@ class CadastroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
 
+        if (supportActionBar != null) {
+            supportActionBar!!.hide()
+        }
+
         carregarElemento()
         carregarEvento()
-        validarNome()
-        validarEmail()
-        validarTelefone()
-        validarSenha()
-        carregarBtnCadastrar()
 
     }
 
@@ -61,18 +60,21 @@ class CadastroActivity : AppCompatActivity() {
                 startActivity(intent)
 
             } else {
-                Toast.makeText(this, "Nome inválido", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Informação inválida", Toast.LENGTH_LONG)
                     .show()
             }
         }
 
     }
-    fun carregarBtnCadastrar() {
-        btnCadastrar.setOnClickListener() {
 
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-    }
+//    fun carregarBtnCadastrar() {
+//        btnCadastrar.setOnClickListener() {
+//
+//
+//
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//        }
+//    }
 
 }
