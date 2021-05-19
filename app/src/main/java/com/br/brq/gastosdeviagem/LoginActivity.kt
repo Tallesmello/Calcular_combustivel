@@ -17,6 +17,19 @@ class LoginActivity : AppCompatActivity() {
     lateinit var email: EditText
     lateinit var senha: EditText
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
+
+        if (supportActionBar != null) {
+            supportActionBar!!.hide()
+        }
+
+        carregarElemento()
+        carregarEvento()
+        carregarCadastro()
+
+    }
 
     fun carregarElemento() {
         email = findViewById(R.id.editEmail)
@@ -57,22 +70,6 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
         }
-    }
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-
-        if (supportActionBar != null) {
-            supportActionBar!!.hide()
-        }
-
-        carregarElemento()
-        carregarEvento()
-        carregarCadastro()
-
-
     }
 
 
