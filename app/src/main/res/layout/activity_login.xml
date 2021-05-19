@@ -98,7 +98,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:inputType="numberPassword" />
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -121,7 +123,7 @@
 
         <!--    Botão "CADASTRE-SE"    -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnCadastreSe"
+            android:id="@+id/buttonCadastreSe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
@@ -138,7 +140,7 @@
 
         <!--  Botão validar email, senha e muda activity  -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnEntrar"
+            android:id="@+id/buttonEntrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
