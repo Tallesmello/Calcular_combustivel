@@ -5,18 +5,19 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_hospedagem.*
-import kotlinx.android.synthetic.main.activity_hospedagem.toGasto as toGasto1
+import kotlinx.android.synthetic.main.activity_hospedagem.totalHotel as toGasto1
 
 
 
 
 
 class HospedagemActivity : AppCompatActivity() {
-    lateinit var valorDiaria : EditText
-    lateinit var qtdeDiaria : EditText
+    lateinit var valorDiaria : TextInputEditText
+    lateinit var qtdeDiaria : TextInputEditText
     lateinit var toGasto : TextView
 
 
@@ -33,7 +34,7 @@ class HospedagemActivity : AppCompatActivity() {
         fun carregarElementos(){
             valorDiaria = findViewById(R.id.editDiaria)
             qtdeDiaria = findViewById(R.id.editQDiaria)
-             toGasto = findViewById(R.id.toGasto)
+             toGasto = findViewById(R.id.totalHotel)
         }
 
         fun validarCampo(): Boolean {

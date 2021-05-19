@@ -8,14 +8,15 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var btnEntrar: Button
     lateinit var btnCadastreSe: Button
-    lateinit var email: EditText
-    lateinit var senha: EditText
+    lateinit var email: TextInputEditText
+    lateinit var senha: TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

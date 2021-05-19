@@ -6,15 +6,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_cadastro.*
 import java.sql.RowId
 
 class CadastroActivity : AppCompatActivity() {
 
-    lateinit var nome: EditText
-    lateinit var email: EditText
-    lateinit var telefone: EditText
-    lateinit var senha: EditText
+    lateinit var nome: TextInputEditText
+    lateinit var email: TextInputEditText
+    lateinit var telefone: TextInputEditText
+    lateinit var senha: TextInputEditText
     lateinit var btnCadastrar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
