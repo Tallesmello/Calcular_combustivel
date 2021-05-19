@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GastosDeViagem">
-        <activity android:name=".CadastroActivity"></activity>
+        <activity android:name=".CadastroActivity" />
         <activity android:name=".AlimentacaoActivity" />
         <activity android:name=".HospedagemActivity" />
         <activity android:name=".MainActivity" />
