@@ -11,9 +11,9 @@ import kotlinx.android.synthetic.main.activity_hospedagem.*
 import kotlinx.android.synthetic.main.activity_hospedagem.toGasto as toGasto1
 
 
-lateinit var valorDiaria : EditText
-    lateinit var qtdeDiaria : EditText
-    lateinit var toGasto : TextView
+lateinit var valorDiaria: EditText
+lateinit var qtdeDiaria: EditText
+lateinit var toGasto: TextView
 
 
 class HospedagemActivity : AppCompatActivity() {
@@ -28,49 +28,37 @@ class HospedagemActivity : AppCompatActivity() {
     }
 
 
+    fun carregarElementos() {
+        valorDiaria = findViewById(R.id.editDiaria)
+        qtdeDiaria = findViewById(R.id.editQDiaria)
+        toGasto = findViewById(R.id.toGasto)
+    }
 
-        fun carregarElementos(){
-            valorDiaria = findViewById(R.id.editDiaria)
-            qtdeDiaria = findViewById(R.id.editQDiaria)
-             toGasto = findViewById(R.id.toGasto)
-        }
+    fun validarCampo(): Boolean {
+        return (valorDiaria.text.toString() != "" && qtdeDiaria.text.toString() != "")
+    }
 
-        fun validarCampo(): Boolean {
-            return (valorDiaria.text.toString() != "" && qtdeDiaria.text.toString() != "")
-        }
-
-        fun totResult (){
-            if(validarCampo()){
-                try {
+    fun totResult() {
+        if (validarCampo()) {
+            try {
                 val uDiaria = valorDiaria.toString().toFloat()
                 val qDiaria = qtdeDiaria.toString().toFloat()
                 val totalDiaria = qDiaria * uDiaria
-                   toGasto.text = "R$ ${"%.2f".format(totalDiaria)}"
-                }catch (num: NumberFormatException){
-                    Toast.makeText(this,getString(R.string.notificacao_informe_valor_valido), Toast.LENGTH_LONG).show()
-                }
-                }else{
-                Toast.makeText(this, getString(R.string.notificacao_insira_valores), Toast.LENGTH_LONG)
-                    .show()
+                toGasto.text = "R$ ${"%.2f".format(totalDiaria)}"
+            } catch (num: NumberFormatException) {
+                Toast.makeText(
+                    this,
+                    getString(R.string.notificacao_informe_valor_valido),
+                    Toast.LENGTH_LONG
+                ).show()
             }
-
-
-
-
-
-
-
-
+        } else {
+            Toast.makeText(this, getString(R.string.notificacao_insira_valores), Toast.LENGTH_LONG)
+                .show()
         }
 
 
-
-
-
-
-
-
-
+    }
 
 
 }

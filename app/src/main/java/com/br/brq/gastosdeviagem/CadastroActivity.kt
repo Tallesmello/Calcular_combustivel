@@ -59,8 +59,7 @@ class CadastroActivity : AppCompatActivity() {
         btnCadastrar.setOnClickListener() {
 
             if (validarNome() && validarEmail() && validarTelefone() && validarSenha()) {
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
+                finish()
 
             } else {
                 Toast.makeText(this, "Informação inválida", Toast.LENGTH_LONG)
@@ -69,15 +68,5 @@ class CadastroActivity : AppCompatActivity() {
         }
 
     }
-
-//    fun carregarBtnCadastrar() {
-//        btnCadastrar.setOnClickListener() {
-//
-//
-//
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        }
-//    }
 
 }
