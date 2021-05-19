@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun validarEmail(): Boolean {
-        return email.toString().contains("@") && email.toString().contains(".com")
+        return email.text.toString().contains("@") && email.text.toString().contains(".com")
     }
 
     fun validarSenha(): Boolean {
@@ -39,8 +39,7 @@ class LoginActivity : AppCompatActivity() {
 
         btnEntrar.setOnClickListener() {
 
-
-             if (validarEmail() && validarSenha()) {
+            if (validarEmail() && validarSenha()) {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
 
