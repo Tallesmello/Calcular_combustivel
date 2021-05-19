@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccenters"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Relatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/relatorio"
+        android:textSize="25sp"
+        android:padding="30dp"
+        android:gravity="center"
+        android:textColor="@color/tamires"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/Hospedagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/hospedagem"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Combustível"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/combustivel"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Alimentacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/alimentaco"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/total"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="299dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/ripper"
+            android:padding="20dp"
+            android:text="Voltar"
+            android:textColor="@color/tamires"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
