@@ -46,14 +46,15 @@
 
     <!--    EditText "Valor diaria"  -->
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editDiaria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Valor da Diária"
-        android:textColorHint="@color/tamires"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginEnd="10dp"
+        android:hint="Valor da Diária"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/tamires">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -65,14 +66,15 @@
 
     <!--    EditText "Quatidade de Diarias"  -->
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editQDiaria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Quantidade de diarias"
-        android:textColorHint="@color/tamires"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginEnd="10dp"
+        android:hint="Quantidade de diarias"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/tamires">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -94,6 +96,7 @@
         android:layout_marginEnd="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
@@ -103,13 +106,14 @@
 
     <!--    EditText "EMAIL"  -->
     <TextView
+        android:id="@+id/totGasto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total R$  "
-        android:padding="20dp"
-        android:textSize="20sp"
         android:layout_gravity="center"
-        android:textColor="@color/tamires"/>
+        android:padding="20dp"
+        android:text="Total R$  "
+        android:textColor="@color/tamires"
+        android:textSize="20sp" />
 
     <!--    FIM   -->
 
