@@ -11,10 +11,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_hospedagem.*
 import kotlinx.android.synthetic.main.activity_hospedagem.totalHotel as toGasto1
 
-
-
-
-
 class HospedagemActivity : AppCompatActivity() {
     lateinit var valorDiaria : TextInputEditText
     lateinit var qtdeDiaria : TextInputEditText
@@ -24,6 +20,10 @@ class HospedagemActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hospedagem)
+
+        if (supportActionBar != null) {
+            supportActionBar!!.hide()
+        }
 
         carregarElementos()
         validarCampo()
