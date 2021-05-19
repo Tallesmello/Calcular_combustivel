@@ -106,7 +106,7 @@
 
     <!--    EditText "EMAIL"  -->
     <TextView
-        android:id="@+id/totGasto"
+        android:id="@+id/toGasto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

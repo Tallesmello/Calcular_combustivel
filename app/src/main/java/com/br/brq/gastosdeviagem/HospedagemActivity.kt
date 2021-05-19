@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_hospedagem.*
+import kotlinx.android.synthetic.main.activity_hospedagem.toGasto as toGasto1
 
 
-
-
-    lateinit var valorDiaria : EditText
+lateinit var valorDiaria : EditText
     lateinit var qtdeDiaria : EditText
-    lateinit var totGasto : TextView
+    lateinit var toGasto : TextView
 
 
 class HospedagemActivity : AppCompatActivity() {
@@ -18,17 +21,38 @@ class HospedagemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hospedagem)
 
+        carregarElementos()
+        validarCampo()
+        totResult()
+
+    }
+
+
+
         fun carregarElementos(){
             valorDiaria = findViewById(R.id.editDiaria)
             qtdeDiaria = findViewById(R.id.editQDiaria)
-            totGasto = findViewById(R.id.totGasto)
+             toGasto = findViewById(R.id.toGasto)
         }
 
-        fun validarEntrada(): Boolean {
-            return (.text.toString() != "" && .text.toString() != "")
+        fun validarCampo(): Boolean {
+            return (valorDiaria.text.toString() != "" && qtdeDiaria.text.toString() != "")
+        }
 
-        var diaria = valorDiaria.toString().toFloat()
-        var qdiaria = qtdeDiaria.toString().toFloat()
+        fun totResult (){
+            if(validarCampo()){
+                try {
+                val uDiaria = valorDiaria.toString().toFloat()
+                val qDiaria = qtdeDiaria.toString().toFloat()
+                val totalDiaria = qDiaria * uDiaria
+                   toGasto.text = "R$ ${"%.2f".format(totalDiaria)}"
+                }catch (num: NumberFormatException){
+                    Toast.makeText(this,getString(R.string.notificacao_informe_valor_valido), Toast.LENGTH_LONG).show()
+                }
+                }else{
+                Toast.makeText(this, getString(R.string.notificacao_insira_valores), Toast.LENGTH_LONG)
+                    .show()
+            }
 
 
 
@@ -37,8 +61,15 @@ class HospedagemActivity : AppCompatActivity() {
 
 
 
+        }
 
-    }
+
+
+
+
+
+
+
 
 
 
