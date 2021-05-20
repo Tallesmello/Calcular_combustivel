@@ -43,7 +43,7 @@
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorPrimaryDark"
         android:layout_gravity="center"
-        android:text="Hospedagel" />
+        android:text="Hospedagem" />
 
     <ImageButton
         android:id="@+id/btnCombustivel"
@@ -64,7 +64,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorPrimaryDark"
-        android:text="Combustivel" />
+        android:text="Combustível" />
 
 
     <ImageButton
@@ -107,6 +107,6 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorPrimaryDark"
-        android:text="Relatorio de Viajem" />
+        android:text="Relatório de Viajem" />
 
 </LinearLayout>
