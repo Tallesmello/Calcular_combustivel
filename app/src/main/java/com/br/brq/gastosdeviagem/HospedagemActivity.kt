@@ -1,5 +1,6 @@
 package com.br.brq.gastosdeviagem
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -24,6 +25,10 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         btnCalcularHotel.setOnClickListener(this)
+        finalizarHospedagem.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
