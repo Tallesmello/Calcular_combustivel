@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Login"
+            android:text="@string/login"
             android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -89,7 +89,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"
+        android:hint="@string/senhaE"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -118,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="Ainda não é cadastrado?"
+            android:text="@string/ainda_n_o_cadastrado"
             android:textColor="@color/white" />
 
         <!--    Botão "CADASTRE-SE"    -->
@@ -127,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:text="Cadastre-se"
+            android:text="@string/cadastre_se"
             android:textColor="@color/tamires" />
         <!--    fim    -->
 
@@ -146,7 +146,7 @@
             android:layout_gravity="center"
             android:background="@drawable/ripper"
             android:textSize="20sp"
-            android:text="Entrar"
+            android:text="@string/entrar"
             android:textColor="@color/tamires"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"

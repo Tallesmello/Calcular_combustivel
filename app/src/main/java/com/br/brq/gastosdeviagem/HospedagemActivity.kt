@@ -42,25 +42,31 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
     fun totalResult() {
         if (validarCampo()) {
             try {
+<<<<<<< HEAD
                 val valorDiaria =
                     editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
                 val qtdeDiaria =
                     editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+=======
+                val valorDiaria = editDiaria.text.toString().toFloat()
+                val qtdeDiaria = editQDiaria.text.toString().toFloat()
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
 
                 val totalDiaria = qtdeDiaria * valorDiaria
                 totalResultadoHotel.text = "R$ ${"%.2f".format(totalDiaria)}"
-            } catch (num: NumberFormatException) {
+
+            } catch (nfe: NumberFormatException) {
                 Toast.makeText(
                     this,
                     getString(R.string.notificacao_informe_valor_valido),
                     Toast.LENGTH_LONG
                 ).show()
             }
+
         } else {
             Toast.makeText(this, getString(R.string.notificacao_insira_valores), Toast.LENGTH_LONG)
                 .show()
         }
-
     }
 
     fun validarCampo(): Boolean {

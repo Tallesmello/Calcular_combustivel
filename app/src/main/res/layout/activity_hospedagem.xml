@@ -14,7 +14,7 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:padding="20dp"
-        android:text="Calcular Hospedagem"
+        android:text="@string/calcular_hospedagem"
         android:textColor="@color/tamires"
         android:textSize="25sp" />
 
@@ -33,6 +33,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:hint="@string/local"
+        android:textColorHint="@color/tamires"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
@@ -56,7 +63,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+<<<<<<< HEAD
         android:hint="Data entrada"
+=======
+        android:hint="@string/valor_da_di_ria"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
@@ -77,7 +88,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
+<<<<<<< HEAD
         android:hint="Valor da Diária"
+=======
+        android:hint="@string/quantidade_de_diarias"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
@@ -96,6 +111,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:hint="@string/data_entrada"
+        android:textColorHint="@color/tamires"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:hint="Quantidade de diarias"
@@ -108,7 +130,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
+<<<<<<< HEAD
             android:inputType="numberDecimal" />
+=======
+            android:inputType="date|textCapSentences|textAutoCorrect" />
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -136,7 +162,12 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/ripper"
+<<<<<<< HEAD
         android:text="Calcular"
+=======
+        android:textSize="20sp"
+        android:text="@string/calcular"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:textColor="@color/tamires"
         android:textSize="20sp" />
     <!--  FIM  -->
@@ -151,7 +182,12 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/ripper"
+<<<<<<< HEAD
         android:text="finalizar"
+=======
+        android:textSize="20sp"
+        android:text="@string/finalizar"
+>>>>>>> 7427431bba942eb8c58d2261bef91729c8992599
         android:textColor="@color/tamires"
         android:textSize="20sp" />
     <!--  FIM  -->
