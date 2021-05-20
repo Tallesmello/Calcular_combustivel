@@ -65,10 +65,10 @@ class CadastroActivity : AppCompatActivity() {
 
             if (validarNome() && validarEmail() && validarTelefone() && validarSenha()) {
 
-            if (isNameValid && isEmailValid && isTelefoneValid && isSenhaValid) {
+                if (isNameValid && isEmailValid && isTelefoneValid && isSenhaValid) {
 
-                finish()
-
+                    finish()
+                }
             } else {
                 if (!isNameValid) {
                     nome.setError("Campo Inválido")
