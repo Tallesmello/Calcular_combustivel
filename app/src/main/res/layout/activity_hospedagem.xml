@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorAccenters"
+    android:orientation="vertical"
 
     tools:context=".HospedagemActivity">
 
@@ -21,7 +21,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/tamires"/>
+        android:background="@color/tamires" />
 
     <ImageView
         android:layout_width="122dp"
@@ -33,13 +33,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Local"
-        android:textColorHint="@color/tamires"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="20dp">
+        android:hint="Local"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/tamires">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editLocal"
@@ -50,11 +50,32 @@
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
+    <!--    "EditText "DATA"  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Data entrada"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/tamires">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccenters"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    FIM   -->
+
     <!--    EditText "Valor diaria"  -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:hint="Valor da Diária"
         android:paddingStart="20dp"
@@ -69,6 +90,7 @@
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
+
 
     <!--    EditText "Quatidade de Diarias"  -->
     <com.google.android.material.textfield.TextInputLayout
@@ -90,33 +112,13 @@
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
-    <!--    EditText "EMAIL"  -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Data entrada"
-        android:textColorHint="@color/tamires"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editData"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccenters"
-            android:inputType="date" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <!--    FIM   -->
-
     <!--    TextView  -->
     <TextView
         android:id="@+id/totalResultadoHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_margin="40dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/resultadoTotal"
         android:textColor="@color/tamires"
@@ -130,13 +132,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/ripper"
-        android:textSize="20sp"
-        android:text="Calcular"
-        android:textColor="@color/tamires"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ripper"
+        android:text="Calcular"
+        android:textColor="@color/tamires"
+        android:textSize="20sp" />
     <!--  FIM  -->
 
     <!--  Botão validar email, senha e muda activity  -->
@@ -145,13 +147,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/ripper"
-        android:textSize="20sp"
-        android:text="finalizar"
-        android:textColor="@color/tamires"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ripper"
+        android:text="finalizar"
+        android:textColor="@color/tamires"
+        android:textSize="20sp" />
     <!--  FIM  -->
 
 </LinearLayout>
