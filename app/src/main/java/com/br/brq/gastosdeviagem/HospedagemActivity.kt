@@ -26,9 +26,10 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
         btnCalcularHotel.setOnClickListener(this)
 
     }
+
     override fun onClick(view: View) {
         val id = view.id
-        if (id == R.id.btnCalcularHotel){
+        if (id == R.id.btnCalcularHotel) {
             totalResult()
         }
     }
@@ -36,8 +37,10 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
     fun totalResult() {
         if (validarCampo()) {
             try {
-                val valorDiaria = editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
-                val qtdeDiaria = editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+                val valorDiaria =
+                    editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+                val qtdeDiaria =
+                    editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
 
                 val totalDiaria = qtdeDiaria * valorDiaria
                 totalResultadoHotel.text = "R$ ${"%.2f".format(totalDiaria)}"
