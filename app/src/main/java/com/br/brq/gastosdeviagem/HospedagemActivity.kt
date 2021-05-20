@@ -2,15 +2,18 @@ package com.br.brq.gastosdeviagem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
+import kotlinx.android.synthetic.main.activity_calculo_gasolina.*
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_hospedagem.*
+import java.lang.NumberFormatException
 
-class HospedagemActivity : AppCompatActivity() {
+class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var valorDiaria: TextInputEditText
     lateinit var qtdeDiaria: TextInputEditText
@@ -30,6 +33,7 @@ class HospedagemActivity : AppCompatActivity() {
         totResult()
 
     }
+
 
     fun carregarElementos() {
         valorDiaria = findViewById(R.id.editDiaria)
@@ -62,4 +66,12 @@ class HospedagemActivity : AppCompatActivity() {
 
     }
 
+    override fun onClick(view: View) {
+        val id = view.id
+        if (id == R.id.btnCalcularHotel) {
+            totResult()
+
+        }
+
+    }
 }

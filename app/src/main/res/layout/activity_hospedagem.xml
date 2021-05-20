@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
