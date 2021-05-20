@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     lateinit var btnHospedagem: ImageButton
+    lateinit var btnCalculoCombustivel: ImageButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +26,13 @@ class MainActivity : AppCompatActivity() {
 
         carregarEle()
         clickHotel()
+        carregarCombustivel()
 
     }
 
     fun carregarEle() {
         btnHospedagem = findViewById(R.id.inHospedagem)
+        btnCalculoCombustivel = findViewById(R.id.btnCombustivel)
 
     }
 
@@ -39,6 +42,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
 
+        }
+    }
+
+    fun carregarCombustivel() {
+        btnCalculoCombustivel.setOnClickListener() {
+
+            val intent = Intent(this, CalculoGasolinaActivity::class.java)
+            startActivity(intent)
         }
     }
 }
