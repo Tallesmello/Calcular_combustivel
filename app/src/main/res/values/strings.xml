@@ -13,4 +13,9 @@
     <string name="notificacao_informe_valor_valido">Informe um valor válido</string>
     <string name="descricao_login">Quer viajar mas não sabe quanto vai custar?
 Planeje os valores de transporte, alimentação, hospedagem e lazer para descobrir.</string>
+    <string name="total">Total</string>
+    <string name="alimentaco">Alimentação</string>
+    <string name="combustivel">Combustível</string>
+    <string name="relatorio">Relatorio</string>
+    <string name="hospedagem">Hospedagem</string>
 </resources>

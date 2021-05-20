@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccenters"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Relatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/relatorio"
+        android:textSize="25sp"
+        android:padding="30dp"
+        android:gravity="center"
+        android:textColor="@color/tamires"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/Hospedagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/hospedagem"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Combustível"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/combustivel"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Alimentacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/alimentaco"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/total"
+        android:padding="30dp"
+        android:textColorHint="@color/white"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <!--  Botão validar email, senha e muda activity  -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/finalizarRelatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ripper"
+        android:textSize="20sp"
+        android:text="finalizar"
+        android:textColor="@color/tamires"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"/>
+    <!--  FIM  -->
+
+</LinearLayout>

@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var btnHospedagem: ImageButton
     lateinit var btnCalculoCombustivel: ImageButton
+    lateinit var btnAlimentacao: ImageButton
+    lateinit var btnRelatorio: ImageButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +29,16 @@ class MainActivity : AppCompatActivity() {
         carregarEle()
         clickHotel()
         carregarCombustivel()
+        carregarAlimentacao()
+        carregarRelatorio()
 
     }
 
     fun carregarEle() {
         btnHospedagem = findViewById(R.id.inHospedagem)
         btnCalculoCombustivel = findViewById(R.id.btnCombustivel)
+        btnAlimentacao = findViewById(R.id.alimentacao)
+        btnRelatorio = findViewById(R.id.relatorio)
 
     }
 
@@ -40,15 +46,26 @@ class MainActivity : AppCompatActivity() {
         btnHospedagem.setOnClickListener() {
             val intent = Intent(this, HospedagemActivity::class.java)
             startActivity(intent)
-
-
         }
     }
 
     fun carregarCombustivel() {
         btnCalculoCombustivel.setOnClickListener() {
-
             val intent = Intent(this, CalculoGasolinaActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun carregarAlimentacao() {
+        btnAlimentacao.setOnClickListener() {
+            val intent = Intent(this, AlimentacaoActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun carregarRelatorio() {
+        btnRelatorio.setOnClickListener() {
+            val intent = Intent(this, RelatorioActivity::class.java)
             startActivity(intent)
         }
     }
