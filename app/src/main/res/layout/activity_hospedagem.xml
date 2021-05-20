@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
@@ -106,22 +106,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
-            android:inputType="text" />
+            android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    FIM   -->
 
-    <!--    EditText "EMAIL"  -->
+    <!--    TextView  -->
     <TextView
-        android:id="@+id/totalHotel"
-        android:layout_width="wrap_content"
+        android:id="@+id/totalResultadoHotel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="20dp"
-        android:text="Total R$  "
+        android:layout_marginTop="10dp"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:text="@string/resultadoTotal"
         android:textColor="@color/tamires"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"/>
+        android:textSize="40sp" />
 
     <!--    FIM   -->
 
@@ -142,7 +141,7 @@
 
     <!--  Botão validar email, senha e muda activity  -->
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnEntrar"
+        android:id="@+id/finalizarHospedagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

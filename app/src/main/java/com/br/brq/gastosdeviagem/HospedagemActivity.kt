@@ -1,21 +1,20 @@
 package com.br.brq.gastosdeviagem
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
+import kotlinx.android.synthetic.main.activity_calculo_gasolina.*
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_hospedagem.*
-import kotlinx.android.synthetic.main.activity_hospedagem.totalHotel as toGasto1
+import java.lang.NumberFormatException
 
-class HospedagemActivity : AppCompatActivity() {
-    lateinit var valorDiaria: TextInputEditText
-    lateinit var qtdeDiaria: TextInputEditText
-    lateinit var toGasto: TextView
-
+class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,29 +24,28 @@ class HospedagemActivity : AppCompatActivity() {
             supportActionBar!!.hide()
         }
 
-        carregarElementos()
-        validarCampo()
-        totResult()
+        btnCalcularHotel.setOnClickListener(this)
+        finalizarHospedagem.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
-
-    fun carregarElementos() {
-        valorDiaria = findViewById(R.id.editDiaria)
-        qtdeDiaria = findViewById(R.id.editQDiaria)
-        toGasto = findViewById(R.id.totalHotel)
+    override fun onClick(view: View) {
+        val id = view.id
+        if (id == R.id.btnCalcularHotel){
+            totalResult()
+        }
     }
 
-    fun validarCampo(): Boolean {
-        return (valorDiaria.text.toString() != "" && qtdeDiaria.text.toString() != "")
-    }
-
-    fun totResult() {
+    fun totalResult() {
         if (validarCampo()) {
             try {
-                val uDiaria = valorDiaria.toString().toFloat()
-                val qDiaria = qtdeDiaria.toString().toFloat()
-                val totalDiaria = qDiaria * uDiaria
-                toGasto.text = "R$ ${"%.2f".format(totalDiaria)}"
+                val valorDiaria = editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+                val qtdeDiaria = editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+
+                val totalDiaria = qtdeDiaria * valorDiaria
+                totalResultadoHotel.text = "R$ ${"%.2f".format(totalDiaria)}"
             } catch (num: NumberFormatException) {
                 Toast.makeText(
                     this,
@@ -60,8 +58,10 @@ class HospedagemActivity : AppCompatActivity() {
                 .show()
         }
 
-
     }
 
+    fun validarCampo(): Boolean {
+        return (editDiaria.text.toString() != "" && editQDiaria.text.toString() != "")
+    }
 
 }
