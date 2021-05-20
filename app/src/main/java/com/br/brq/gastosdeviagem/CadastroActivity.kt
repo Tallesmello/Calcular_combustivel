@@ -58,24 +58,25 @@ class CadastroActivity : AppCompatActivity() {
     fun carregarEvento() {
 
         btnCadastrar.setOnClickListener() {
-            val isnameValid = validarNome()
-            val istelefoneValid = validarNome()
-            val isemailValid = validarNome()
-            val issenhaValid = validarNome()
+            val isNameValid = validarNome()
+            val isEmailValid = validarEmail()
+            val isTelefoneValid = validarTelefone()
+            val isSenhaValid = validarSenha()
 
-            if (isnameValid && istelefoneValid && isemailValid && issenhaValid) {
+            if (isNameValid && isEmailValid && isTelefoneValid && isSenhaValid) {
                 finish()
 
             } else {
-                if(!isnameValid ){
+                if (!isNameValid) {
                     nome.setError("Campo Inválido")
 
-                }else if (!istelefoneValid){
+                } else if (!isEmailValid) {
+                    email.setError("Email invávilo")
+
+                } else if (!isTelefoneValid) {
                     telefone.setError("Telefone Inválido")
 
-                }else if (!isemailValid){
-                    email.setError("Email invávilo")
-                }else if (!issenhaValid){
+                } else if (!isSenhaValid) {
                     senha.setError("Senha inválida")
                 }
                 Toast.makeText(this, "Informação inválida", Toast.LENGTH_LONG)
@@ -84,15 +85,5 @@ class CadastroActivity : AppCompatActivity() {
         }
 
     }
-
-//    fun carregarBtnCadastrar() {
-//        btnCadastrar.setOnClickListener() {
-//
-//
-//
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        }
-//    }
 
 }

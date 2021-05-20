@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorAccenters"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -21,71 +21,90 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/tamires"/>
+        android:background="@color/tamires" />
 
-    <LinearLayout
+    <ImageButton
+
+        android:id="@+id/inHospedagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="50dp"
-        android:gravity="center">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="30dp"
+        android:src="@drawable/ic_baseline_hotel_24" />
 
-        <ImageButton
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:text="Hospedagel" />
 
-            android:id="@+id/inHospedagem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
-            android:padding="30dp"
-            android:src="@drawable/ic_baseline_hotel_24" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="30dp"
-            android:src="@drawable/ic_baseline_directions_car_24"
-            android:background="@color/colorPrimaryDark"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/btnCombustivel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="30dp"
+        android:src="@drawable/ic_baseline_directions_car_24" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_food_24"
-            android:padding="30dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Combustivel" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_family"
-            android:padding="30dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimaryDark"/>
-
-    </LinearLayout>
 
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:padding="30dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_paste"
-        android:background="@color/colorPrimaryDark"/>
+        android:src="@drawable/ic_food_24" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Alimentação" />
 
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="30dp"
+        android:src="@drawable/ic_paste" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Relatorio de Viajem" />
 
 </LinearLayout>

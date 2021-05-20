@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun validarSenha(): Boolean {
-        return senha.toString().length >=8
+        return senha.toString().length >= 8
     }
 
 
