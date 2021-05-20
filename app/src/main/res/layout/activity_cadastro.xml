@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Cadastro"
+            android:text="@string/cadastro"
             android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -62,7 +62,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -78,7 +78,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Telefone"
+        android:hint="@string/telefone"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -94,7 +94,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:padding="20dp"
         android:textColorHint="@color/white">
 
@@ -119,7 +119,7 @@
         android:layout_gravity="center"
         android:background="@drawable/ripper"
         android:textSize="20sp"
-        android:text="Cadastrar"
+        android:text="@string/cadastrar"
         android:textColor="@color/tamires"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"

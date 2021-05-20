@@ -14,7 +14,7 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:padding="20dp"
-        android:text="Calcular Alimentação"
+        android:text="@string/calcular_alimenta_o"
         android:textColor="@color/tamires"
         android:textSize="25sp"/>
 
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:hint="Valor Diário"
+        android:hint="@string/valor_di_rio"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:hint="Quantos dias"
+        android:hint="@string/quantos_dias"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
@@ -93,7 +93,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/ripper"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:textColor="@color/tamires"
         android:textSize="20sp" />
     <!--  FIM  -->
@@ -108,7 +108,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/ripper"
-        android:text="Finalizar"
+        android:text="@string/finalizar_alimentacao"
         android:textColor="@color/tamires"
         android:textSize="20sp" />
     <!--  FIM  -->
