@@ -46,6 +46,7 @@
         android:text="Hospedagel" />
 
     <ImageButton
+        android:id="@+id/btnCombustivel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -67,6 +68,7 @@
 
 
     <ImageButton
+        android:id="@+id/alimentacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
@@ -87,6 +89,7 @@
         android:text="Alimentação" />
 
     <ImageButton
+        android:id="@+id/relatorio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

@@ -23,6 +23,12 @@
         android:layout_height="3dp"
         android:background="@color/tamires" />
 
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_calculate_24" />
+
     <!--    EditText "EMAIL"  -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -110,7 +116,8 @@
         android:text="Total R$  "
         android:textColor="@color/tamires"
         android:textSize="20sp"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 
     <!--    FIM   -->
 
@@ -126,8 +133,7 @@
         android:background="@drawable/ripper"
         android:text="Calcular"
         android:textColor="@color/tamires"
-        android:textSize="20sp"
-        android:layout_marginTop="110dp"/>
+        android:textSize="20sp"/>
     <!--  FIM  -->
 
     <!--  Botão validar email, senha e muda activity  -->
