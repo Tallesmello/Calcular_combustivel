@@ -31,9 +31,10 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
         }
 
     }
+
     override fun onClick(view: View) {
         val id = view.id
-        if (id == R.id.btnCalcularHotel){
+        if (id == R.id.btnCalcularHotel) {
             totalResult()
         }
     }
@@ -41,23 +42,24 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
     fun totalResult() {
         if (validarCampo()) {
             try {
-                val valorDiaria = editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
-                val qtdeDiaria = editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+                val valorDiaria = editDiaria.text.toString().toFloat()
+                val qtdeDiaria = editQDiaria.text.toString().toFloat()
 
                 val totalDiaria = qtdeDiaria * valorDiaria
                 totalResultadoHotel.text = "R$ ${"%.2f".format(totalDiaria)}"
-            } catch (num: NumberFormatException) {
+
+            } catch (nfe: NumberFormatException) {
                 Toast.makeText(
                     this,
                     getString(R.string.notificacao_informe_valor_valido),
                     Toast.LENGTH_LONG
                 ).show()
             }
+
         } else {
             Toast.makeText(this, getString(R.string.notificacao_insira_valores), Toast.LENGTH_LONG)
                 .show()
         }
-
     }
 
     fun validarCampo(): Boolean {

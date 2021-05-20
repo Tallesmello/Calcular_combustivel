@@ -16,7 +16,7 @@
         android:padding="20dp"
         android:text="Calcular Alimentação"
         android:textColor="@color/tamires"
-        android:textSize="25sp" />
+        android:textSize="25sp"/>
 
     <View
         android:layout_width="match_parent"
@@ -35,32 +35,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:hint="Local"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textColorHint="@color/tamires"
-        android:layout_marginTop="20dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccenters"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <!--    FIM   -->
-
-    <!--    EditText "EMAIL"  -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:hint="Valor Diária"
+        android:hint="Valor Diário"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/foodValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
@@ -74,31 +55,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:hint="Quantidade de diarias"
+        android:hint="Quantos dias"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="@color/tamires">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccenters"
-            android:inputType="numberDecimal" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <!--    FIM   -->
-
-    <!--    EditText "EMAIL"  -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:hint="Data entrada"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textColorHint="@color/tamires">
-
-        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quantosDias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccenters"
@@ -111,8 +74,8 @@
         android:id="@+id/totalResultadoFood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_margin="40dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/resultadoTotal"
         android:textColor="@color/tamires"
@@ -132,12 +95,12 @@
         android:background="@drawable/ripper"
         android:text="Calcular"
         android:textColor="@color/tamires"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
     <!--  FIM  -->
 
     <!--  Botão validar email, senha e muda activity  -->
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnEntrar"
+        android:id="@+id/finalizarFood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
