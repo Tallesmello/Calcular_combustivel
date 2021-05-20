@@ -5,9 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
+import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
+
+    lateinit var btnHospedagem: ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,13 +23,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
+        carregarEle()
+        clickHotel()
 
     }
 
-    override fun onClick(v: View) {
-        val intent = Intent(this, CalculoGasolinaActivity::class.java)
-        startActivity(intent)
+    fun carregarEle() {
+        btnHospedagem = findViewById(R.id.inHospedagem)
 
     }
 
+    fun clickHotel() {
+        btnHospedagem.setOnClickListener() {
+            val intent = Intent(this, HospedagemActivity::class.java)
+            startActivity(intent)
+
+
+        }
+    }
 }
+
+
+
+
+
