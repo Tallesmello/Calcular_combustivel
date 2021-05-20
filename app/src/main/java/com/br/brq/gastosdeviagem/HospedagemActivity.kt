@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_hospedagem.*
 import kotlinx.android.synthetic.main.activity_hospedagem.totalHotel as toGasto1
 
 class HospedagemActivity : AppCompatActivity() {
+
     lateinit var valorDiaria : TextInputEditText
     lateinit var qtdeDiaria : TextInputEditText
     lateinit var toGasto : TextView

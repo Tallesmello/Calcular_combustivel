@@ -63,7 +63,10 @@ class CadastroActivity : AppCompatActivity() {
             val isTelefoneValid = validarTelefone()
             val isSenhaValid = validarSenha()
 
+            if (validarNome() && validarEmail() && validarTelefone() && validarSenha()) {
+
             if (isNameValid && isEmailValid && isTelefoneValid && isSenhaValid) {
+
                 finish()
 
             } else {
