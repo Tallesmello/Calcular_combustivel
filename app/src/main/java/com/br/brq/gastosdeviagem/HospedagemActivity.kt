@@ -15,11 +15,6 @@ import java.lang.NumberFormatException
 
 class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
 
-    lateinit var valorDiaria: TextInputEditText
-    lateinit var qtdeDiaria: TextInputEditText
-    lateinit var toGasto: TextView
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hospedagem)
@@ -28,30 +23,24 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
-        carregarElementos()
-        validarCampo()
-        totResult()
+        btnCalcularHotel.setOnClickListener(this)
 
     }
-
-
-    fun carregarElementos() {
-        valorDiaria = findViewById(R.id.editDiaria)
-        qtdeDiaria = findViewById(R.id.editQDiaria)
-        toGasto = findViewById(R.id.totalResultadoHotel)
+    override fun onClick(view: View) {
+        val id = view.id
+        if (id == R.id.btnCalcularHotel){
+            totalResult()
+        }
     }
 
-    fun validarCampo(): Boolean {
-        return (valorDiaria.text.toString() != "" && qtdeDiaria.text.toString() != "")
-    }
-
-    fun totResult() {
+    fun totalResult() {
         if (validarCampo()) {
             try {
-                val uDiaria = valorDiaria.toString().toFloat()
-                val qDiaria = qtdeDiaria.toString().toFloat()
-                val totalDiaria = qDiaria * uDiaria
-                toGasto.text = "R$ ${"%.2f".format(totalDiaria)}"
+                val valorDiaria = editDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+                val qtdeDiaria = editQDiaria.isTextInputLayoutFocusedRectEnabled.toString().toFloat()
+
+                val totalDiaria = qtdeDiaria * valorDiaria
+                totalResultadoHotel.text = "R$ ${"%.2f".format(totalDiaria)}"
             } catch (num: NumberFormatException) {
                 Toast.makeText(
                     this,
@@ -66,12 +55,8 @@ class HospedagemActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    override fun onClick(view: View) {
-        val id = view.id
-        if (id == R.id.btnCalcularHotel) {
-            totResult()
-
-        }
-
+    fun validarCampo(): Boolean {
+        return (editDiaria.text.toString() != "" && editQDiaria.text.toString() != "")
     }
+
 }
