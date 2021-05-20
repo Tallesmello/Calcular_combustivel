@@ -141,7 +141,7 @@
 
     <!--  Botão validar email, senha e muda activity  -->
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnEntrar"
+        android:id="@+id/finalizarHospedagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
